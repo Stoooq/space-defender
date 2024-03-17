@@ -7,7 +7,7 @@ class Player {
     }
 
     movePlayer = (direction) => {
-        const newPosition = this.player.offsetLeft + direction * 20
+        const newPosition = this.player.offsetLeft + direction * 30
         const { left, right} = this.board.getBoundingClientRect()
         const minLeft = this.player.offsetWidth / 2
         const maxRight = right - left - minLeft
